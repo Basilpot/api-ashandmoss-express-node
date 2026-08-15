@@ -18,7 +18,7 @@ export const CreateBlogValidator = z.object({
   authorId: z.number().int().optional(),
   published: z.boolean().optional().default(false),
   inTrash: z.boolean().optional().default(false),
-  postType: z.enum(postType).default(postType.travel_guide),
+  postType: z.enum(postType).default(postType.blog),
 });
 
 export const UpdateBlogValidator = CreateBlogValidator.partial();

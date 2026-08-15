@@ -3,7 +3,7 @@ const openapi = {
   info: {
     title: "API DOCS",
     version: "1.0.0",
-    description: "OpenAPI documentation for travel engine backend",
+    description: "OpenAPI documentation for the Ash and Moss e-commerce backend",
   },
   servers: [
     {

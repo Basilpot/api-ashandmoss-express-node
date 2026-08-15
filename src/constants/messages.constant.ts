@@ -1,5 +1,5 @@
 const messages = {
-  welcomeMessage: 'Welcome to Walkthrough Nepal API',
+  welcomeMessage: 'Welcome to Ash and Moss API',
   failedToCreate: "Failed to create",
   failedToUpdate: "Failed to update", 
   failedToDelete: "Failed to delete",
@@ -28,7 +28,6 @@ const messages = {
   dataDeleted: 'Data Deleted Successfully',
   dataNotFound: "Data not found",
 
-  bookingNotFound: "Booking not found",
   adminCreated: 'Admin Created Successfully',
   adminNotFound: 'Admin Not Found',
   permissionsUpdate: 'Permissions Update Successfully',
@@ -46,11 +45,6 @@ const messages = {
   invalidProject: 'Invalid Project',
   invalidRequest: 'Invalid Request',
   invalidDate: 'Date should be in format mm/dd/yyyy',
-
-
-  tenantExists: "Tenant already exists.",
-  tenantCreated: "Tenant created successfully",
-
 
   userExists: "User already exists."
 };

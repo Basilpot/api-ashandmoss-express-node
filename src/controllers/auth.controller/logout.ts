@@ -14,6 +14,5 @@ export async function logout(_: Request, res: Response) {
   res.clearCookie("user_auth_token", clearCookieOptions);
   res.clearCookie("admin_auth_token", clearCookieOptions);
   res.clearCookie("author_auth_token", clearCookieOptions);
-  res.clearCookie("tenant_auth_token", clearCookieOptions);
   return res.json({ message: messages.loggedOut});
 }

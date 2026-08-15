@@ -29,9 +29,7 @@ export async function createBlog(req: Request, res: Response) {
     });
   }
 
-  const postType = data.postType;
-
-  const canonicalUrl = postType ? `/blog/${slug}` : `/travel-guide/${slug}`;
+  const canonicalUrl = `/blog/${slug}`;
 
   const blogData = Object.fromEntries(
     Object.entries(validatedData.data).filter(

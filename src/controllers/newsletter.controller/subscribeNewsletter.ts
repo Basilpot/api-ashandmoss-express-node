@@ -49,7 +49,7 @@ export default async function subscribeNewsletter(
 
   await sendEmail({
     to: email,
-    subject: "Welcome to My Easy Guide Newsletter! 🎉",
+    subject: "Welcome to the Ash & Moss Newsletter!",
     text: newsLetterSubscribedEmailTemplate(email, unsubSecret),
   });
 

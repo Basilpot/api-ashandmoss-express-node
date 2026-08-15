@@ -21,6 +21,6 @@ export async function resolveBlog(
 
   return res.status(200).json({
     exists: true,
-    canonicalPath: `/travel-guide/${blog.slug}`,
+    canonicalPath: `/blog/${blog.slug}`,
   });
 }

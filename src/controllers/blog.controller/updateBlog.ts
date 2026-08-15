@@ -43,9 +43,7 @@ export const updateBlog = async (
     });
   }
 
-  const postType = foundCategory.categoryHandle == "blog";
-
-  const canonicalUrl = postType ? `/blog/${slug}` : `/travel-guide/${slug}`;
+  const canonicalUrl = `/blog/${slug}`;
 
   const push: string[] = [];
 
