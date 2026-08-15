@@ -1,0 +1,51 @@
+import { Prisma } from "@prisma/client";
+
+export const productListSelect = {
+  id: true,
+  title: true,
+  slug: true,
+  images: true,
+  attributes: true,
+  price: true,
+  maxPrice: true,
+  compareAtPrice: true,
+  isFeatured: true,
+  status: true,
+  views: true,
+  popularityScore: true,
+  categoryId: true,
+  brandId: true,
+  createdAt: true,
+  updatedAt: true,
+  brand: { select: { id: true, name: true, slug: true, logo: true } },
+  category: { select: { id: true, name: true, slug: true } },
+  tags: { select: { id: true, name: true, slug: true } },
+  variants: {
+    select: {
+      id: true,
+      name: true,
+      sku: true,
+      price: true,
+      compareAtPrice: true,
+      stock: true,
+      image: true,
+      sortOrder: true,
+    },
+    orderBy: { sortOrder: "asc" as const },
+  },
+} satisfies Prisma.ProductSelect;
+
+export const productDetailSelect = {
+  ...productListSelect,
+  description: true,
+  videoIntro: true,
+  attributes: true,
+  faq: true,
+  metaTitle: true,
+  metaDescription: true,
+  metaKeywords: true,
+  metaRobots: true,
+  sku: true,
+  priceCurrency: true,
+  availability: true,
+} satisfies Prisma.ProductSelect;

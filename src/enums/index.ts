@@ -1,0 +1,25 @@
+export enum ProductStatus {
+  DRAFT = "DRAFT",
+  PUBLISHED = "PUBLISHED",
+}
+
+export enum OrderStatus {
+  PENDING_PAYMENT = "PENDING_PAYMENT",
+  CONFIRMED = "CONFIRMED",
+  CANCELLED = "CANCELLED",
+  FAILED = "FAILED",
+  COMPLETED = "COMPLETED",
+}
+
+export enum PaymentStatus {
+  PENDING = "PENDING",
+  SUCCESS = "SUCCESS",
+  FAILED = "FAILED",
+  REFUNDED = "REFUNDED",
+}
+
+export enum AdminType {
+  SUPERADMIN = "SUPERADMIN",
+  MODERATOR = "MODERATOR",
+  SUPPORT = "SUPPORT",
+}

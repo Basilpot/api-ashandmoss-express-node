@@ -1,0 +1,26 @@
+/src/scripts/postBlog.js
+/src/scripts/myeasyguide_blogs.csv
+/node_modules
+node_modules
+.env
+/generated/prisma
+/dist
+.DS_Store
+
+# ESLint config build artifacts
+eslint.config.*
+!eslint.config.mts
+
+
+#prisma config build artifacts
+prisma.config.*
+!prisma.config.ts
+/data
+/public/uploads
+
+# stray artifacts
+output.json
+.playwright-mcp
+
+# generated openapi client (build artifact)
+.husky/src
